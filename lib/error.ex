@@ -1,3 +1,3 @@
 defmodule Exmeal.Error do
-# TO DO
+  # TO DO
 end
