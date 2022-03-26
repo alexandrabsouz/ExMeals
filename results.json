@@ -6,9 +6,9 @@
       "line": 5
     },
     {
-      "describe": "create/2",
+      "describe": "get/2",
       "file": "/home/alexandrabsouz/study/elixir/daily-meals/test/exmeal_web/controller/meals_controller_test.exs",
-      "line": 26
+      "line": 108
     },
     {
       "describe": "delete/2",
@@ -21,30 +21,30 @@
       "line": 95
     },
     {
-      "describe": "update/2",
-      "file": "/home/alexandrabsouz/study/elixir/daily-meals/test/exmeal_web/controller/meals_controller_test.exs",
-      "line": 73
-    },
-    {
-      "describe": "delete/2",
-      "file": "/home/alexandrabsouz/study/elixir/daily-meals/test/exmeal_web/controller/meals_controller_test.exs",
-      "line": 58
-    },
-    {
       "describe": "get/2",
       "file": "/home/alexandrabsouz/study/elixir/daily-meals/test/exmeal_web/controller/meals_controller_test.exs",
       "line": 130
+    },
+    {
+      "describe": "create/2",
+      "file": "/home/alexandrabsouz/study/elixir/daily-meals/test/exmeal_web/controller/meals_controller_test.exs",
+      "line": 26
+    },
+    {
+      "describe": "update/2",
+      "file": "/home/alexandrabsouz/study/elixir/daily-meals/test/exmeal_web/controller/meals_controller_test.exs",
+      "line": 73
     }
   ],
   "failed": [],
   "invalid": [],
   "passed": [
     {
-      "describe": "get/2",
+      "describe": "delete/2",
       "file": "/home/alexandrabsouz/study/elixir/daily-meals/test/exmeal_web/controller/meals_controller_test.exs",
-      "line": 108,
+      "line": 58,
       "module": "Elixir.Exmeal.MealsControllerTest",
-      "test": "test get/2 when id exist, return the meal"
+      "test": "test delete/2 when id not exist, return an error"
     }
   ],
   "skiped": []
