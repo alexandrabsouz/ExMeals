@@ -23,10 +23,18 @@ defmodule ExmealWeb.MealsController do
   end
 
   def delete(conn, %{"id" => id}) do
-    with {:ok, meal} <- Exmeal.delete_meal(id) do
+    with {:ok, _meal} <- Exmeal.delete_meal(id) do
       conn
       |> put_status(:no_content)
       |> text("")
     end
+  end
+
+  def update(conn, params) do
+      with {:ok, %Meal{} = meal} <- Exmeal.update_meal(params) do
+          conn
+          |> put_status(:ok)
+          |> render("meal.json", meal: meal)
+      end
   end
 end
