@@ -12,5 +12,4 @@ defmodule Exmeal.Repo.Migrations.CreateUsersTable do
     create unique_index(:users, [:email])
     create unique_index(:users, [:cpf])
   end
-  end
 end
