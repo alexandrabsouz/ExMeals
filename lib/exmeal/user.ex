@@ -14,9 +14,9 @@ defmodule Exmeal.User do
   @derive {Jason.Encoder, only: [:id, :name, :email, :cpf]}
 
   schema "users" do
+    field :cpf, :string
+    field :email, :string
     field :name, :string
-    field :email, :date
-    field :cpf, :integer
 
     has_many :meals, Meal
 
