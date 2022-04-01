@@ -10,7 +10,8 @@ defmodule ExmealWeb.MealsView do
           calories: meal.calories,
           date: meal.date,
           description: meal.description,
-          id: meal.id
+          id: meal.id,
+          user_id: meal.user_id
         }
       }
     }
