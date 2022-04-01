@@ -4,11 +4,18 @@
   "invalid": [],
   "passed": [
     {
-      "describe": "changeset/1",
-      "file": "/home/alexandrabsouz/study/elixir/daily-meals/test/exmeal/user_test.exs",
-      "line": 11,
-      "module": "Elixir.Exmeal.UserTest",
-      "test": "test changeset/1 when all params are valid, returns a valid changeset"
+      "describe": "Create Meal",
+      "file": "/home/alexandrabsouz/study/elixir/daily-meals/test/exmeal/meals/create_test.exs",
+      "line": 27,
+      "module": "Elixir.Exmeal.Meals.CreateTest",
+      "test": "test Create Meal when there are invalid params, returns an error"
+    },
+    {
+      "describe": "Create Meal",
+      "file": "/home/alexandrabsouz/study/elixir/daily-meals/test/exmeal/meals/create_test.exs",
+      "line": 9,
+      "module": "Elixir.Exmeal.Meals.CreateTest",
+      "test": "test Create Meal when all params are valid, returns the meal"
     }
   ],
   "skiped": []
