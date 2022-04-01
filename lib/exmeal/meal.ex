@@ -8,10 +8,11 @@ defmodule Exmeal.Meal do
   alias Exmeal.User
 
   @primary_key {:id, :binary_id, autogenerate: true}
+  @foreign_key_type :binary_id
 
-  @required_params [:description, :date, :calories]
+  @required_params [:description, :date, :calories, :user_id]
 
-  @derive {Jason.Encoder, only: [:id, :description, :date, :calories]}
+  @derive {Jason.Encoder, only: [:id, :description, :date, :calories, :user_id]}
 
   schema "meals" do
     field :description, :string
