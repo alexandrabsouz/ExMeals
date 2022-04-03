@@ -38,4 +38,13 @@ defmodule Exmeal.Factory do
       id: "69961117-d966-4e2f-ac55-476d4f78dddf"
     }
   end
+
+  def meal_changeset_factory do
+    %{
+      "description" => "Banana",
+      "date" => ~U[2016-05-24 23:18:27.306043Z],
+      "calories" => 20,
+      "user_id" => "388fccf4-f3bb-4822-9817-973a62158d20"
+    }
+  end
 end

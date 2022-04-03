@@ -4,16 +4,8 @@ defmodule ExmealWeb.MealsView do
 
   def render("create.json", %{meal: %Meal{} = meal}) do
     %{
-      message: "Meal created!",
-      meal: %{
-        meal: %Meal{
-          calories: meal.calories,
-          date: meal.date,
-          description: meal.description,
-          id: meal.id,
-          user_id: meal.user_id
-        }
-      }
+      meals: %{meal: %Meal{calories: meal.calories, date: meal.date, description: meal.description, id: meal.id, user_id: meal.user_id}},
+      message: "Meal created!"
     }
   end
 

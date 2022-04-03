@@ -1,17 +1,15 @@
 defmodule ExmealWeb.Router do
   use ExmealWeb, :router
 
-  alias ExmealWeb.Plugs.UUIDChecker
-
   pipeline :api do
     plug :accepts, ["json"]
-    plug UUIDChecker
   end
 
   scope "/api", ExmealWeb do
     pipe_through :api
 
     resources "/meals", MealsController, except: [:new, :edit]
+    resources "/users", UsersController, except: [:new, :edit]
   end
 
   # Enables LiveDashboard only for development
