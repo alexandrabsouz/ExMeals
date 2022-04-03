@@ -29,6 +29,5 @@ defmodule Exmeal.Meal do
     |> cast(params, @required_params)
     |> validate_required(@required_params)
     |> validate_length(:description, min: 3)
-    |> IO.inspect()
   end
 end
