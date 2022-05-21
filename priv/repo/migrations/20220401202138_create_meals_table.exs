@@ -6,7 +6,7 @@ defmodule Exmeal.Repo.Migrations.CreateMealsTable do
       add :description, :string
       add :date, :date
       add :calories, :integer
-      add :user_id, references(:users, type: :binary_id)
+      add :user_id, references(:users)
 
       timestamps()
     end
