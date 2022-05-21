@@ -1,14 +1,10 @@
-defmodule Exmeal.Users.Get do
-  alias Exmeal.{
-    Error,
-    Repo,
-    User
-  }
+defmodule ExMeal.Users.Get do
+  alias ExMeal.{Repo, User}
 
-  def by_id(uuid) do
-    case Repo.get(User, uuid) do
-      nil -> {:error, Error.build_user_not_found_error()}
-      user -> {:ok, user}
+  def by_id(id) do
+    case Repo.get(User, id) do
+      nil -> {:error, "User not found"}
+      user -> {:ok, Repo.preload(user, :meals)}
     end
   end
 end
