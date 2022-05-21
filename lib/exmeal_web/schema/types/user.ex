@@ -3,7 +3,7 @@ defmodule ExmealWeb.Schema.Types.User do
 
   @desc "Logical user representation"
   object :user do
-    field :id, non_null(:id)
+    field :id, non_null(:id), description: "User id, needs to be an integer"
     field :name, non_null(:string)
     field :email, non_null(:string)
     field :cpf, non_null(:string)
