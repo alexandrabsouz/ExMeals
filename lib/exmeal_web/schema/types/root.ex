@@ -20,5 +20,12 @@ defmodule ExmealWeb.Schema.Types.Root do
 
       resolve &UsersResolver.create/2
     end
+
+    @desc "deletes user"
+    field :delete_user, type: :user do
+      arg :id, non_null(:delete_user)
+
+      resolve &UsersResolver.delete/2
+    end
   end
 end
