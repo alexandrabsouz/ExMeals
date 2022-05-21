@@ -54,7 +54,9 @@ defmodule Exmeal.MixProject do
       {:credo, "~> 1.5", only: [:dev, :test], runtime: false},
       {:excoveralls, "~> 0.14.4", only: :test},
       {:ex_machina, "~> 2.7.0"},
-      {:json_response, git: "https://github.com/joaopealves/json_response"}
+      {:json_response, git: "https://github.com/joaopealves/json_response"},
+      {:absinthe, "~> 1.7.0"},
+      {:absinthe_plug, "~> 1.5.0"}
     ]
   end
 

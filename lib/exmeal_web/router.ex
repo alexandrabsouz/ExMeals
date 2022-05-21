@@ -8,6 +8,9 @@ defmodule ExmealWeb.Router do
   scope "/api", ExmealWeb do
     pipe_through :api
 
+    forward "/graphql", Absinthe.Plug, schema: ExmealWeb.Schema
+    forward "/graphiql", Absinthe.Plug.GraphiQL, schema: ExmealWeb.Schema
+
     resources "/meals", MealsController, except: [:new, :edit]
     resources "/users", UsersController, except: [:new, :edit]
   end

@@ -29,5 +29,6 @@ defmodule Exmeal.Meal do
     |> cast(params, @required_params)
     |> validate_required(@required_params)
     |> validate_length(:description, min: 3)
+    |> foreign_key_constraint(:user_id)
   end
 end
