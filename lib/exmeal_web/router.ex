@@ -5,14 +5,14 @@ defmodule ExmealWeb.Router do
     plug :accepts, ["json"]
   end
 
-  scope "/api", ExmealWeb do
+  scope "/api" do
     pipe_through :api
 
     forward "/graphql", Absinthe.Plug, schema: ExmealWeb.Schema
     forward "/graphiql", Absinthe.Plug.GraphiQL, schema: ExmealWeb.Schema
 
-    resources "/meals", MealsController, except: [:new, :edit]
-    resources "/users", UsersController, except: [:new, :edit]
+    # resources "/meals", ExmealWeb.MealsController, except: [:new, :edit]
+    # resources "/users", ExmealWeb.UsersController, except: [:new, :edit]
   end
 
   # Enables LiveDashboard only for development

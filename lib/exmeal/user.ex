@@ -4,10 +4,7 @@ defmodule Exmeal.User do
   import Ecto.Changeset
 
   alias Ecto.Changeset
-
   alias Exmeal.Meal
-
-  @primary_key {:id, :binary_id, autogenerate: true}
 
   @required_params [:name, :email, :cpf]
 
