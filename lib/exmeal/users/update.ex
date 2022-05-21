@@ -1,13 +1,9 @@
 defmodule Exmeal.Users.Update do
-  alias Exmeal.{
-    Error,
-    Repo,
-    User
-  }
+  alias Exmeal.{Repo, User}
 
   def call(%{"id" => id} = params) do
     case Repo.get(User, id) do
-      nil -> {:error, Error.build_user_not_found_error()}
+      nil -> {:error, "user not found"}
       user -> update_user(user, params)
     end
   end
