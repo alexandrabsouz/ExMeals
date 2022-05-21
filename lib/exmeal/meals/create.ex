@@ -5,7 +5,7 @@ defmodule Exmeal.Meals.Create do
     Meal
   }
 
-  ddef call(params) do
+  def call(params) do
     params
     |> Meal.changeset()
     |> Repo.insert()
