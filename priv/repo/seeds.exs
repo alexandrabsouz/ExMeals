@@ -16,9 +16,9 @@ user1 = %{cpf: "31147677379", email: "berenice78@hotmail.com", name: "Amarelo So
 user2 = %{cpf: "78711160101", email: "evert.klocko@gmail.com", name: "Azulino Souza"}
 user3 = %{cpf: "56965545984", email: "lourdes_wintheiser18@yahoo.com", name: "Rosado Souza"}
 
-meal1 = %{description: "Pizza de calabresa", calories: 373.3, category: :food}
-meal2 = %{description: "Copo de refri de cola", calories: 80.0, category: :drink}
-meal3 = %{description: "Fatia de torta de banana", calories: 250.55, category: :dessert}
+meals1 = %{description: "Pizza de calabresa", calories: 373.3, category: :food}
+meals2 = %{description: "Copo de refri de cola", calories: 80.0, category: :drink}
+meals3 = %{description: "Fatia de torta de banana", calories: 250.55, category: :dessert}
 
 # Inserting Users
 %User{id: user1_id} = user1 |> User.changeset() |> Repo.insert!()
